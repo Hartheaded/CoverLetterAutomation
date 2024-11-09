@@ -2,11 +2,6 @@
 
 # This script is aimed to take one of the files within the templates folder, change the company title and job title of the file in .tmp, then export it as a PDF in the output folder. Each of these PDFs should be named in a style similar to this [Company][Job Title][Date].pdf
 
-
-#templateChoice="./templates/$1.txt"
-#companyName=$2
-#jobTitle=$3
-
 # Takes the contents of ./appendText.txt and appends it to the bottom of the output of inputVerifier
 appendText(){
 	if [[ $(wc appendText.txt) != "0 0 0 appendText.txt" ]]; then
